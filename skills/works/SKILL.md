@@ -15,11 +15,11 @@ metadata:
 
 **You must:**
 
-- Keep **one folder per project** under `kyp/works/<slug>/`. Every folder has a `work.md` using the schema in **Work File**, plus whatever drafts/assets/notes the project needs.
+- Keep **one folder per project** under `mind/works/<slug>/`. Every folder has a `work.md` using the schema in **Work File**, plus whatever drafts/assets/notes the project needs.
 - Log **dated progress** in `## Log` inside `work.md`. Keep `## Next` current — **1 to 5 concrete next steps**.
 - Maintain **wiki links** in both directions between this work and any peeps, orgs, nooks, vibes, pages, or digs it touches.
-- **Search `kyp/works/`** before opening a new work — if a related one exists, extend it or hand off via `Connected:` instead of duplicating.
-- Close properly: add `Closed` and `Outcome` to the top, then **move the folder** to `kyp/works/closed/` (don't delete).
+- **Search `mind/works/`** before opening a new work — if a related one exists, extend it or hand off via `Connected:` instead of duplicating.
+- Close properly: add `Closed` and `Outcome` to the top, then **move the folder** to `mind/works/closed/` (don't delete).
 
 **Do not:** See **What NOT to Suggest** — e.g. don't turn works into a todo manager, don't open works for one-off questions (those are digs), don't let spanning work rot in daily memory.
 
@@ -27,12 +27,12 @@ metadata:
 
 ## Data
 
-**Base path** is workspace root or document root folder. On first use, create it: `mkdir -p kyp/works/`. Works uses a `kyp/works/` folder in your workspace.
+**Base path** is workspace root or document root folder. On first use, create it: `mkdir -p mind/works/`. Works uses a `mind/works/` folder in your workspace.
 
 One folder per project. Every folder has a `work.md`; additional files are up to the project.
 
 ```
-kyp/
+mind/
 └── works/
     ├── worksconfig.yml
     ├── berlin-trip/
@@ -53,7 +53,7 @@ kyp/
 
 ### Dataset Config
 
-`worksconfig.yml` lives inside `kyp/works/`. Read it at the start of any session involving this skill.
+`worksconfig.yml` lives inside `mind/works/`. Read it at the start of any session involving this skill.
 
 ```yaml
 images: no # by default no; ask the human. Warn it is token-expensive.
@@ -112,7 +112,7 @@ Log: dated entries of substance — decisions made, things booked, blockers, dra
 When the human starts multi-session work that will have artifacts, open it. Don't ask permission — just do it and confirm briefly.
 
 1. **Name it as a project, not a category.** "Berlin trip with Alex", not "travel".
-2. **Search first.** Grep `kyp/works/` for related slugs before creating — extend if something close exists.
+2. **Search first.** Grep `mind/works/` for related slugs before creating — extend if something close exists.
 3. **Bootstrap the links.** What peeps, orgs, nooks, pages, vibes, or digs already touch this? Pre-populate the frontmatter.
 4. **Write one `Next`.** One concrete step the human can take. Don't pad to five if only one is obvious.
 5. **Seed the Log.** What prompted this work? One sentence.
@@ -145,7 +145,7 @@ Closed: 5 May 2026
 Outcome: Trip done. Standout: Museum Island. Next time: less Mitte, more Neukölln.
 ```
 
-Then move the whole folder to `kyp/works/closed/<slug>/`. Don't delete — closed works are the record of how the year was spent.
+Then move the whole folder to `mind/works/closed/<slug>/`. Don't delete — closed works are the record of how the year was spent.
 
 ---
 
@@ -153,19 +153,19 @@ Then move the whole folder to `kyp/works/closed/<slug>/`. Don't delete — close
 
 ```bash
 # Works on a topic
-grep -ril "travel\|trip\|berlin" kyp/works/
+grep -ril "travel\|trip\|berlin" mind/works/
 
 # Active works
-grep -rl "Status: active" kyp/works/*/work.md
+grep -rl "Status: active" mind/works/*/work.md
 
 # Paused works worth restarting
-grep -rl "Status: paused" kyp/works/*/work.md
+grep -rl "Status: paused" mind/works/*/work.md
 
 # Works involving a peep
-grep -rl "\[\[alex-chen\]\]" kyp/works/
+grep -rl "\[\[alex-chen\]\]" mind/works/
 
 # Works with a near target date
-grep -rl "Target: .*Apr 2026\|Target: .*May 2026" kyp/works/
+grep -rl "Target: .*Apr 2026\|Target: .*May 2026" mind/works/
 ```
 
 Always read the full `work.md` after grepping — the matched line is a signal, not the whole picture.
@@ -209,4 +209,4 @@ https://raw.githubusercontent.com/haah-ing/works-skill/main/SKILL.md
 - Opening a work for a one-off question — that's a dig, not a work.
 - Letting active work rot in daily memory — if it spans days and has artifacts, it belongs in Works.
 - Merging related works into one mega-folder — use `Connected:` links instead.
-- Keeping closed works in `kyp/works/` — move them to `closed/` so the active list stays clean.
+- Keeping closed works in `mind/works/` — move them to `closed/` so the active list stays clean.

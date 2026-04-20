@@ -23,7 +23,7 @@ No project manager. No kanban board. Just files and your AI agent.
 - **Closes cleanly** — finished or dropped works move to `closed/` with an Outcome, preserved as the record of how the year was spent
 
 ```
-kyp/works/
+mind/works/
   berlin-trip/
     work.md
     itinerary.md
@@ -131,4 +131,4 @@ MIT. Take it, fork it, build on it.
 
 ---
 
-*Designed by Ilya Belikin @ Know Your People*
+*Designed by Ilya Belikin @ Haah Inc*

@@ -6,7 +6,7 @@
 
 ## Philosophy
 
-A work is something you're _doing_. Not a question you're figuring out (that's [Digs](https://github.com/Know-Your-People/digs-skill)), not a person you're getting to know (that's [Peeps](https://github.com/Know-Your-People/peeps-skill)), not a place you've been (that's [Nooks](https://github.com/Know-Your-People/nooks-skill)). It's an effort that spans sessions and produces artifacts — a trip, a launch, a long piece of writing, a move, a build.
+A work is something you're _doing_. Not a question you're figuring out (that's [Digs](https://github.com/haah-ing/digs-skill)), not a person you're getting to know (that's [Peeps](https://github.com/haah-ing/peeps-skill)), not a place you've been (that's [Nooks](https://github.com/haah-ing/nooks-skill)). It's an effort that spans sessions and produces artifacts — a trip, a launch, a long piece of writing, a move, a build.
 
 Without Works, multi-session efforts rot in daily memory. The launch you're planning gets mentioned on Monday, buried by Wednesday, and rediscovered three weeks later with half the details missing. Works gives each effort its own folder, its own log, and its own next steps — so nothing has to be reconstructed from scratch.
 
@@ -46,13 +46,13 @@ mind/works/
 
 ```bash
 mkdir -p ~/.claude/skills/works
-curl -o ~/.claude/skills/works/SKILL.md https://raw.githubusercontent.com/Know-Your-People/works-skill/main/SKILL.md
+curl -o ~/.claude/skills/works/SKILL.md https://raw.githubusercontent.com/haah-ing/works-skill/main/SKILL.md
 ```
 
 ### Other agents
 
 ```bash
-npx skills add Know-Your-People/works-skill
+npx skills add haah-ing/works-skill
 ```
 
 Works with OpenClaw, Cursor, Codex, OpenCode, GitHub Copilot, and any agent that supports the skills ecosystem.
@@ -108,12 +108,12 @@ Digs: [[why-berlin-feels-different]]
 
 Works is part of a suite of personal intelligence skills:
 
-- [**Peeps** 👥](https://github.com/Know-Your-People/peeps-skill) — your personal network. When someone joins a work, it's linked to their peep file in both directions.
-- [**Digs** 🔭](https://github.com/Know-Your-People/digs-skill) — your active research threads. When a dig turns actionable ("I figured out what to do about X"), it hands off to a work.
-- [**Nooks** 📍](https://github.com/Know-Your-People/nooks-skill) — your saved places. Destinations and meeting spots link into the work that happens there.
-- [**Pages** 📖](https://github.com/Know-Your-People/pages-skill) — your reading life. Books informing the project land in `Pages:`.
-- [**Vibes** 🎧](https://github.com/Know-Your-People/vibes-skill) — your cultural context. References that set the tone or inspire go in `Vibes:`.
-- [**Haah** 🪩](https://github.com/Know-Your-People/haah-skill) — network dispatch. When a work needs external input, Haah can ask your trusted circles.
+- [**Peeps** 👥](https://github.com/haah-ing/peeps-skill) — your personal network. When someone joins a work, it's linked to their peep file in both directions.
+- [**Digs** 🔭](https://github.com/haah-ing/digs-skill) — your active research threads. When a dig turns actionable ("I figured out what to do about X"), it hands off to a work.
+- [**Nooks** 📍](https://github.com/haah-ing/nooks-skill) — your saved places. Destinations and meeting spots link into the work that happens there.
+- [**Pages** 📖](https://github.com/haah-ing/pages-skill) — your reading life. Books informing the project land in `Pages:`.
+- [**Vibes** 🎧](https://github.com/haah-ing/vibes-skill) — your cultural context. References that set the tone or inspire go in `Vibes:`.
+- [**Haah** 🪩](https://github.com/haah-ing/haah-skill) — network dispatch. When a work needs external input, Haah can ask your trusted circles.
 
 Install all six and your agent knows your people, your places, your reads, your culture, your open questions — and what you're actually doing.
 

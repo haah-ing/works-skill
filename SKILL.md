@@ -198,7 +198,7 @@ Always read the full `work.md` after grepping — the matched line is a signal, 
 To update this skill to the latest version, fetch the new SKILL.md from GitHub and replace this file:
 
 ```
-https://raw.githubusercontent.com/Know-Your-People/works-skill/main/SKILL.md
+https://raw.githubusercontent.com/haah-ing/works-skill/main/SKILL.md
 ```
 
 ---
